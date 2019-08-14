@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #ffffff !important;
+}
+
+ul.options{
+    list-style: none;
+}
+
+ul.options li{
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+li button{
+    width: 125px;
+    height: 125px;
+}
+
+.block{
+    display: block;
+}
