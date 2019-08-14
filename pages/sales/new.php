@@ -5,6 +5,7 @@
     <title>POS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include('../../includes/requires/css.php'); ?>
+    <?php include('../../includes/requires/js.php'); ?>
 </head>
 <body>
 <div class="wrapper">
@@ -23,9 +24,113 @@
             </div>
         </nav>
 
+        <div class="col-12 mt-4 mb-4 bg-light">
+            <button class="btn btn-outline-dark top-button">
+                <i class="fas fa-user"></i> Add Customer
+            </button>
+            <button class="btn btn-outline-dark top-button">
+                <i class="fas fa-user-plus"></i> New Customer
+            </button>
+            <button class="btn btn-outline-dark top-button">
+                <i class="fas fa-cart-plus"></i> Add Product
+            </button>
+        </div>
+        <hr>
+        <div class="container m-0">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="model">Model (SKU)</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Model (SKU)">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="UPC">UPC</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="UPC">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="brand">Brand</span>
+                            </div>
+                            <select class="form-control" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="category">Category</span>
+                            </div>
+                            <select class="form-control" id="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Price (MAP)</span>
+                            </div>
+                            <input id="price" name="price" class="form-control" placeholder="Price" type="number" step="any" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Cost</span>
+                            </div>
+                            <input id="cost" name="cost" class="form-control" placeholder="Cost" type="number" step="any" />
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $('#stepup').click(function() {
+                                var value = parseInt($('#inventory').val());
+                                $('#inventory').val(value+1);
+                            });
+                            $('#stepdown').click(function() {
+                                var value = parseInt($('#inventory').val());
+                                $('#inventory').val(value-1);
+                            });
+                        });
+                    </script>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Stock</span>
+                            </div>
+                            <input id="inventory" name="inventory" class="form-control" value="0" placeholder="Stock" type="number" step="1" />
+                            <div class="input-group-append">
+                                <span id="stepup" class="input-group-text btn">+</span>
+                            </div>
+                            <div class="input-group-append">
+                                <span id="stepdown" class="input-group-text btn">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
 
 </div>
-<?php include('../../includes/requires/js.php'); ?>
 </body>
 </html>

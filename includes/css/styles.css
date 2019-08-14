@@ -23,3 +23,7 @@ li button{
 .block{
     display: block;
 }
+
+#stepdown, #stepup {
+    cursor: pointer;
+}
