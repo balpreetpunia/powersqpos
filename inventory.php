@@ -34,11 +34,25 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn btn-outline-dark">
+                    <button class="btn btn-outline-dark" onclick="location.href='<?='/pages/inventory/view.php\''?>">
                         <span style="font-size: 3rem">
                             <i class="fas fa-list"></i>
                         </span>
                         <span class="block">View</span>
+                </li>
+                <li>
+                    <button class="btn btn-outline-dark">
+                        <span style="font-size: 3rem">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span class="block">Search</span>
+                </li>
+                <li>
+                    <button class="btn btn-outline-dark">
+                        <span style="font-size: 3rem">
+                            <i class="fas fa-edit"></i>
+                        </span>
+                        <span class="block">Edit</span>
                 </li>
             </ul>
         </div>

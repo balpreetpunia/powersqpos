@@ -32,7 +32,10 @@
                 <i class="fas fa-user-plus"></i> New Customer
             </button>
             <button class="btn btn-outline-dark top-button">
-                <i class="fas fa-cart-plus"></i> Add Product
+                <i class="fas fa-shopping-cart"></i> Add Product
+            </button>
+            <button class="btn btn-outline-dark top-button">
+                <i class="fas fa-cart-plus"></i> New Product
             </button>
         </div>
         <hr>

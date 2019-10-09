@@ -40,6 +40,20 @@
                         </span>
                         <span class="block">View</span>
                 </li>
+                <li>
+                    <button class="btn btn-outline-dark">
+                        <span style="font-size: 3rem">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span class="block">Search</span>
+                </li>
+                <li>
+                    <button class="btn btn-outline-dark">
+                        <span style="font-size: 3rem">
+                            <i class="fas fa-edit"></i>
+                        </span>
+                        <span class="block">Edit</span>
+                </li>
             </ul>
         </div>
     </div>
